@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:;"
+    />
+    <title>Singular Desk</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <span class="mark">◎</span>
+        <div>
+          <strong>Singular Desk</strong>
+          <span id="host" class="muted small"></span>
+        </div>
+      </div>
+
+      <div class="peer">
+        <span id="status" class="pill">Waiting for a phone</span>
+        <span id="device" class="muted small"></span>
+        <span id="caps" class="caps"></span>
+      </div>
+
+      <div class="topbar-actions">
+        <button id="refresh-apps" class="btn" type="button">Refresh apps</button>
+        <button id="toggle-drawer" class="btn" type="button">Phone apps</button>
+        <button id="toggle-log" class="btn" type="button">Log</button>
+      </div>
+    </header>
+
+    <main class="stage">
+      <section id="empty" class="empty">
+        <div class="empty-card">
+          <h1>This is the receiving screen</h1>
+          <p>
+            Open <strong>Singular Cast</strong> on your phone, pick this PC, then swipe an app
+            toward the edge you configured. It will appear here as a tile, sized to fit.
+          </p>
+          <ul>
+            <li>Mouse and keyboard work directly on each tile.</li>
+            <li>Right-click is Android <em>Back</em>; the scroll wheel scrolls the app.</li>
+            <li><strong>Bring back to phone</strong> returns the app to the device.</li>
+            <li>Resize a tile and the app re-lays itself out at the new size.</li>
+          </ul>
+          <p class="muted small">
+            Both devices must be on the same network. If discovery is blocked, type this PC's IP
+            into Singular Cast manually.
+          </p>
+        </div>
+      </section>
+
+      <section id="grid" class="grid" hidden></section>
+
+      <aside id="drawer" class="drawer">
+        <header>
+          <strong>Apps on the phone</strong>
+          <input id="app-filter" type="search" placeholder="Filter…" />
+        </header>
+        <div id="app-list" class="app-list"></div>
+        <footer class="muted small">
+          <span class="dot running"></span> running
+          <span class="dot recent"></span> recent — click to cast to this PC
+        </footer>
+      </aside>
+    </main>
+
+    <div id="log" class="log"></div>
+    <div id="toasts" class="toasts"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

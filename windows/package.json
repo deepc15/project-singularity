@@ -1,0 +1,23 @@
+{
+  "name": "singular-desk",
+  "productName": "Singular Desk",
+  "version": "1.0.0",
+  "description": "Windows receiving screen for Project Singular — hosts apps cast from Singular Cast on Android.",
+  "main": "dist/main/main.js",
+  "private": true,
+  "scripts": {
+    "build": "node build.mjs",
+    "watch": "node build.mjs --watch",
+    "start": "npm run build && electron .",
+    "dev": "npm run build && electron . --dev",
+    "typecheck": "tsc --noEmit",
+    "dist": "npm run build && electron-builder"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "electron": "^33.2.1",
+    "electron-builder": "^25.1.8",
+    "esbuild": "^0.24.2",
+    "typescript": "^5.7.2"
+  }
+}
