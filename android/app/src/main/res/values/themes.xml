@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Compose draws everything; this only covers the pre-Compose window. -->
+    <style name="Theme.SingularCast" parent="android:Theme.Material.NoActionBar">
+        <item name="android:statusBarColor">@color/singular_background</item>
+        <item name="android:navigationBarColor">@color/singular_background</item>
+        <item name="android:windowBackground">@color/singular_background</item>
+    </style>
+</resources>

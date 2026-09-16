@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Singular Cast</string>
+    <string name="channel_name">Casting</string>
+    <string name="channel_description">Shown while apps are cast to a PC.</string>
+    <string name="action_stop">Stop</string>
+    <string name="accessibility_label">Singular Cast input bridge</string>
+    <string name="accessibility_description">Lets Singular Cast notice when a cast app needs text input, and drive the screen when Shizuku is unavailable. No data leaves your devices.</string>
+</resources>

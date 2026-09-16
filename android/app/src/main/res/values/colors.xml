@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Only the pre-Compose window needs colours here; the UI palette lives
+         in ui/theme/Theme.kt. -->
+    <color name="singular_background">#FF0D1014</color>
+    <color name="ic_launcher_background">#FF11161C</color>
+</resources>
